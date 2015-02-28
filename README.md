@@ -1,6 +1,6 @@
 - Wordpress A.F.D Verification / INURL - BRASIL
 ------
->Check Arbitrary File Download the CMS Wordpress
+>Check Vulnerability Arbitrary File Download the CMS Wordpress
 
 ```
  NAME:                 Wordpress A.F.D Verification/ INURL - BRASIL
@@ -17,6 +17,9 @@
  YOUTUBE               https://www.youtube.com/channel/UCFP-WEzs5Ikdqw0HBLImGGA
  PACKETSTORMSECURITY:: http://packetstormsecurity.com/user/googleinurl/
 ```
+- Demonstration
+------
+![alt text](http://i.imgur.com/45BFlNe.png "Wordpress A.F.D Verification/ INURL - BRASIL.")
 
 - Themes affected and Dorks search
 ------
