@@ -2,7 +2,7 @@
 ------
 >Check Arbitrary File Download the CMS Wordpress
 
-´´´´
+```
  NAME:                 Wordpress A.F.D Verification/ INURL - BRASIL
  TIPE:                 Arbitrary File Download
  Tested on:            Linux 
@@ -16,11 +16,11 @@
  GIT:                  https://github.com/googleinurl
  YOUTUBE               https://www.youtube.com/channel/UCFP-WEzs5Ikdqw0HBLImGGA
  PACKETSTORMSECURITY:: http://packetstormsecurity.com/user/googleinurl/
-´´´´
+```
 
 - Themes affected and Dorks search
 ------
-´´´´
+```
  WordPress revslide Arbitrary File Download
  Google Dork:: inurl:revslider_show_image -intext:revslider_show_image
  ------------------------------------------------------------------------------
@@ -113,24 +113,24 @@
  Vendor Homepage:: http://themeforest.net/item/cuckootap-one-page-parallax-wp-theme-plus-eshop/3512405
  Google Dork:: wp-admin & inurl:revslider_show_image
  ------------------------------------------------------------------------------
- ´´´´
+```
  
  - Dependencies:
 ------
-´´´´
+```
 sudo apt-get install php5 php5-cli php5-curl
-´´´´
+```
 
  - Execute:
 ------
-´´´´
+```
     php {script} {target}
 Ex: php wordpress-A.F.D-Verification.php www.target.gov.us
-´´´´
+```
 
  - Use complementing inurlbr scanner:
 ------
-´´´´
+```
 Ex: ./inurlbr.php --dork 'inurl:revslider_show_image -intext:revslider_show_image' -s '01.txt' -q 1,6 --comand-all 'php xpl.php _TARGET_'
+```
 More details about inurlbr scanner: https://github.com/googleinurl/SCANNER-INURLBR
-´´´´
