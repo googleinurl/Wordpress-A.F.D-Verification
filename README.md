@@ -24,8 +24,9 @@
 - Themes affected and Dorks search
 ------
 ```
- WordPress revslide Arbitrary File Download
- Google Dork:: inurl:revslider_show_image -intext:revslider_show_image
+ ------------------------------------------------------------------------------
+  WordPress revslide Arbitrary File Download
+  Google Dork:: inurl:revslider_show_image -intext:revslider_show_image
  ------------------------------------------------------------------------------
  
  WordPress Ultimatum Theme Arbitrary File Download
@@ -57,7 +58,7 @@
  Vendor Homepage:: https://www.authenticthemes.com/theme/apollo/
  Google Dork:: "Index of" & /wp-content/themes/beach_apollo/
  ------------------------------------------------------------------------------
-
+ 
  WordPress index of ajax-store-locator 
  Google Dork:: inurl:ajax-store-locator
  Vendor Homepage:: http://codecanyon.net/item/ajax-store-locator-wordpress/5293356
@@ -115,6 +116,34 @@
  WordPress Revslider Theme Arbitrary File Download
  Vendor Homepage:: http://themeforest.net/item/cuckootap-one-page-parallax-wp-theme-plus-eshop/3512405
  Google Dork:: wp-admin & inurl:revslider_show_image
+ ------------------------------------------------------------------------------
+ 
+ Wordpress plugin Justified Image Grid v2.0.1 LFD Exploiter 2015
+ Vendor Homepage:: http://codecanyon.net/item/justified-image-grid-premium-wordpress-gallery/2594251
+ Google Dork:: inurl:"/plugins/justified-image-grid"
+ ------------------------------------------------------------------------------
+ 
+ Wordpress aspose-doc-exporter Plugin Arbitrary File Download Vulnerability
+ Vendor Homepage:: https://wordpress.org/plugins/aspose-doc-exporter/developers/
+ ------------------------------------------------------------------------------
+ 
+ WordPress Slider Revolution Responsive <= 4.1.4 Arbitrary File Download vulnerability
+ Vendor Homepage:: http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380
+ Google Dork:: revslider.php "index of"
+ ------------------------------------------------------------------------------
+
+ Wordpress Theme Divi Arbitrary File Download Vulnerability
+ Vendor Homepage:: http://www.elegantthemes.com/gallery/divi/
+ Google Dork:: inurl:wp-content/themes/Divi/
+ ------------------------------------------------------------------------------
+
+ WordPress Aspose Cloud eBook Generator File Download Vulnerability
+ Vendor Homepage:: https://wordpress.org/plugins/aspose-cloud-ebook-generator/
+ ------------------------------------------------------------------------------
+
+ Wordpress Plugin 'WP Mobile Edition' Remote File Disclosure Vulnerability
+ Vendor Homepage:: https://wordpress.org/plugins/wp-mobile-edition/
+ Google Dork: inurl:?fdx_switcher=mobile
  ------------------------------------------------------------------------------
 ```
  
