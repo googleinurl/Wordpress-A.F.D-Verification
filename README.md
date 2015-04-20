@@ -145,6 +145,12 @@
  Vendor Homepage:: https://wordpress.org/plugins/wp-mobile-edition/
  Google Dork: inurl:?fdx_switcher=mobile
  ------------------------------------------------------------------------------
+ 
+ WordPress WP-Mon Arbitrary File Download Vulnerability
+ Vendor Homepage:: https://wordpress.org/plugins/wp-mon/
+ Google Dork: inurl:"/wp-content/plugins/wp-mon"
+ ------------------------------------------------------------------------------
+ 
 ```
  
  - Dependencies:
