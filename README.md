@@ -151,6 +151,11 @@
  Google Dork: inurl:"/wp-content/plugins/wp-mon"
  ------------------------------------------------------------------------------
  
+ Wordpress MiwoFTP Plugin 1.0.5 suffers from arbitrary file download vulnerability
+ Vendor Homepage:: http://www.miwisoft.com
+ Google Dork: inurl:"php?page=miwoftp"
+ ------------------------------------------------------------------------------
+ 
 ```
  
  - Dependencies:
