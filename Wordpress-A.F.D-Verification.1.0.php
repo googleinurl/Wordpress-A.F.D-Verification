@@ -292,7 +292,7 @@ function __request($url, $plugin) {
     }
 __plus();
 
-    if (preg_match("#DB_NAME#i", $corpo) || preg_match("#root#i", $corpo) || preg_match("#readfile(#i", $corpo)) {
+    if (preg_match("#DB_NAME#i", $corpo) || preg_match("#root:#i", $corpo) || preg_match("#readfile(#i", $corpo)) {
 
 //-----------------------------------------------------------------------------
         preg_match_all("(DB_NAME.*')", $corpo, $status['DB_NAME']);
