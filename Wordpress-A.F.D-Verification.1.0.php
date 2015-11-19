@@ -6,7 +6,7 @@
 # Tested on:            Linux 
 # EXECUTE:              php exploit.php www.target.gov.us
 # OUTPUT:               WORDPRES_A_F_D.txt
-# AUTOR:                Cleiton Pinheiro / NICK: GoogleINURL
+# AUTOR:                GoogleINURL
 # Blog:                 http://blog.inurl.com.br
 # Twitter:              https://twitter.com/googleinurl
 # Fanpage:              https://fb.com/InurlBrasil
